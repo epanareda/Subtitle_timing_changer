@@ -121,8 +121,8 @@ new_sub = ""
 
 # Get each line of the originals "srt" file and the ones with time, changes them as indicated.
 with open("subs.srt") as file: #¡¡¡¡¡¡¡¡¡¡¡¡IMPORTANT HERE PUT THE NAME OF THE FILE, OR CHANGE THE FILE'S NAME!!!!!!!!!!!
-    time_to_change = "00:00:00,500"
-    add_or_sub = "sub"
+    time_to_change = "00:00:00,500" #¡¡¡¡¡¡¡¡¡¡¡¡IMPORTANT HERE PUT THE SPECIFY THE TIME ("hours:minutes:seconds", seconds with 3 decimals, even if it's al 000) TO ADD OR SUBSTRACT!!!!!!!!!!!
+    add_or_sub = "sub" #¡¡¡¡¡¡¡¡¡¡¡¡IMPORTANT HERE PUT THE INDICATE IF THE TIME IS FOR ADD ("add") OR SUBSTRACT ("sub")!!!!!!!!!!!
 
     for l in file:
         if("-->" in l):
